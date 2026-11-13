@@ -1,0 +1,168 @@
+/* Graphite — generated from tokens.json */
+:root, [data-theme="light"] {
+  --canvas: #f1f1f1; /* App background behind every panel. Never put body text blocks directly on it without a surface; labels and nav text are fine. */
+  --surface: #ffffff; /* Panels, cards, list containers, the selected nav item and inputs. The main ground for content. */
+  --surface-sunken: #f6f6f5; /* Nested cards inside a surface, row hover, progress tracks, neutral tags. */
+  --border: #e6e5e4; /* Decorative hairlines only: row dividers and card outlines. Carries no meaning, so it is not held to 3:1. */
+  --border-strong: #8a8784; /* Borders that carry meaning: checkbox and input outlines. At least 3:1 on surface and canvas. */
+  --ink: #070606; /* Headings, names, primary text and icons on canvas, surface and surface-sunken. */
+  --ink-muted: #51504f; /* Secondary text, previews and nav labels on canvas, surface and surface-sunken. */
+  --ink-subtle: #6b6968; /* Tertiary text such as dates, counts and helper copy on canvas, surface and surface-sunken. The lightest ink that still passes 4.5:1. */
+  --ink-faint: #a9a6a3; /* Placeholder icons, disabled text and decoration on surface. Fails 4.5:1 by design: never use it for text a person must read. */
+  --primary: #070606; /* Fill of the primary button and of selected or checked controls. One primary action per view. */
+  --on-primary: #ffffff; /* Text and icons on primary. */
+  --accent: #7f4e6b; /* The single brand hue (plum). Links, the highlighted tag, key data points; as text on surface, canvas and accent-soft. */
+  --on-accent: #ffffff; /* Text and icons on an accent fill. */
+  --accent-soft: #f4eaf0; /* Tinted ground for accent tags and highlighted rows; pair with accent text. */
+  --tag-green-bg: #e6f3e3; /* Ground of the green category tag. */
+  --tag-green-ink: #2c6a2b; /* Text on tag-green-bg. */
+  --tag-blue-bg: #e2f0f5; /* Ground of the blue category tag. */
+  --tag-blue-ink: #1d5f78; /* Text on tag-blue-bg. */
+  --tag-orange-bg: #fbeadb; /* Ground of the orange category tag. */
+  --tag-orange-ink: #8a4a12; /* Text on tag-orange-bg. */
+  --info: #3f5f8a; /* Slate blue. Informational messages and neutral highlights; as a fill or as text on surface, canvas and info-soft. Always paired with a word or icon. */
+  --on-info: #ffffff; /* Text and icons on an info fill. */
+  --info-soft: #e9eef5; /* Tinted ground for info alerts and tags; pair with info text. */
+  --success: #2e6e68; /* Lagoon, a teal-leaning green. Confirmations and positive states; as a fill or as text on surface, canvas and success-soft. Leans towards blue so it stays distinct from danger for colour-blind readers. Always paired with a word or icon. */
+  --on-success: #ffffff; /* Text and icons on a success fill. */
+  --success-soft: #e4f0ee; /* Tinted ground for success alerts and tags; pair with success text. */
+  --warning: #e3b85a; /* Honey yellow. Fill only: warning badges, dots and banners, with on-warning text. Too light for text on light surfaces; use warning-ink for text. */
+  --on-warning: #070606; /* Text and icons on a warning fill, in both themes. */
+  --warning-ink: #75530f; /* Warning text and icons on surface, canvas and warning-soft. Always paired with a word or icon. */
+  --warning-soft: #f8efd9; /* Tinted ground for warning alerts and tags; pair with warning-ink text. */
+  --danger: #a3423a; /* Clay red. Errors and destructive actions; as a fill or as text on surface, canvas and danger-soft. Always paired with a word or icon. */
+  --on-danger: #ffffff; /* Text and icons on a danger fill. */
+  --danger-soft: #f8eae7; /* Tinted ground for error alerts and tags; pair with danger text. */
+  --focus: var(--ink); /* Focus ring: 2px solid with a 2px offset on every interactive element. At least 3:1 on every surface. */
+  --shadow-sm: 0 1px 2px rgba(7,6,6,0.05); /* Resting panels and the selected nav item. Barely there: surfaces separate by tone first. */
+  --shadow-md: 0 8px 24px rgba(7,6,6,0.08); /* Menus, popovers, floating toolbars. */
+  --shadow-lg: 0 24px 64px rgba(7,6,6,0.12); /* Dialogs and the app shell floating on a backdrop. */
+}
+[data-theme="dark"] {
+  --canvas: #070606;
+  --surface: #151414;
+  --surface-sunken: #1f1e1d;
+  --border: #2b2a29;
+  --border-strong: #6e6b69;
+  --ink: #f1f1f1;
+  --ink-muted: #a9a6a3;
+  --ink-subtle: #8c8986;
+  --ink-faint: #51504f;
+  --primary: #f1f1f1;
+  --on-primary: #070606;
+  --accent: #d3a5c0;
+  --on-accent: #070606;
+  --accent-soft: #2e2029;
+  --tag-green-bg: #1a2a1a;
+  --tag-green-ink: #9fd49a;
+  --tag-blue-bg: #152830;
+  --tag-blue-ink: #93cbe0;
+  --tag-orange-bg: #33230f;
+  --tag-orange-ink: #eab887;
+  --info: #a3bce0;
+  --on-info: #070606;
+  --info-soft: #1a2331;
+  --success: #9fd0c8;
+  --on-success: #070606;
+  --success-soft: #14272a;
+  --warning: #e3b85a;
+  --on-warning: #070606;
+  --warning-ink: #e6c479;
+  --warning-soft: #2b2412;
+  --danger: #eda79d;
+  --on-danger: #070606;
+  --danger-soft: #331a17;
+  --focus: var(--ink);
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.5);
+  --shadow-md: 0 8px 24px rgba(0,0,0,0.6);
+  --shadow-lg: 0 24px 64px rgba(0,0,0,0.7);
+}
+:root {
+  --space-1: 4px; /* Icon to label gap inside tags. */
+  --space-2: 8px; /* Gap between icon and label; gap between stacked panels. */
+  --space-3: 12px; /* Row padding block; gap between controls. */
+  --space-4: 16px; /* Panel and card padding; row padding inline. */
+  --space-5: 20px; /* Gap between panels on wide screens. */
+  --space-6: 24px; /* Gap between sidebar sections; app shell padding. */
+  --space-8: 32px; /* Gap between page sections. */
+  --space-12: 48px; /* Page margins and hero spacing. */
+  --radius-sm: 6px; /* Checkboxes, tags, small thumbnails. */
+  --radius-md: 12px; /* Nav items, nested cards, menus. */
+  --radius-lg: 20px; /* Panels and cards on canvas. */
+  --radius-xl: 28px; /* App shell, dialogs, large feature blocks. */
+  --radius-full: 999px; /* Buttons, inputs, icon buttons, avatars, progress bars. */
+  --font-sans: "Geist", "Helvetica Neue", Arial, system-ui, sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, Menlo, monospace;
+  --text-display: 600 40px/44px var(--font-sans); /* Page heroes and marketing headlines. One per page. */
+  --text-title: 600 24px/30px var(--font-sans); /* Page and dialog titles. */
+  --text-heading: 600 18px/24px var(--font-sans); /* Section headings. */
+  --text-subheading: 600 14px/20px var(--font-sans); /* Panel and card headers, names in list rows. */
+  --text-body: 400 14px/20px var(--font-sans); /* Default interface text. */
+  --text-body-strong: 500 14px/20px var(--font-sans); /* Emphasis within body text, button labels, subjects. */
+  --text-caption: 400 12px/16px var(--font-sans); /* Dates, counts, helper text, metadata. */
+  --text-label: 500 11px/14px var(--font-sans); /* Tags and small badges. */
+  --text-mono: 400 12px/16px var(--font-mono); /* Code, IDs and tabular figures. */
+}
+.display {
+  font-family: var(--font-sans);
+  font-size: 40px;
+  line-height: 44px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+.title {
+  font-family: var(--font-sans);
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+.heading {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.subheading {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.body {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.body-strong {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+.caption {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.label {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+.mono {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
